@@ -5,7 +5,7 @@ $$f(x,y) = \left\{ \begin{array}{cl}
 		x\sin \dfrac{1}{y} +y \sin \dfrac{1}{x},  &  x \neq 0 \, \mbox{ eta } \, y \neq 0, \\
                  0,	                                &  x=0 \mbox{ edo } y=0.
 		   \end{array} \right. $$
-Funtizoa jarraia jatorrian \Longleftrightarrow
+Funtizoa jarraia jatorrian $\Longleftrightarrow$
 \[
 \lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0
 \]
@@ -113,6 +113,17 @@ Beraz, ona hemen emaitza:
 \begin{equation*}
     \int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx;
 \end{equation*}
+Kalkulua (TODO: Azaldu)
+\begin{equation*}
+    \begin{split}
+    &\int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx = \int \frac{t^3-t}{t^2+1}6t^5dt = 6 * \int \frac{t^8-t^6}{t^2+1}dt =
+     6 * \int \frac{(t^2+1)(t^6-2t^9+2t^2-2)+2}{(t^2+1)}dt = & 
+     \\ &6 * \int t^6-2t^4+2t^2-2+\frac{2}{t^2+1}dt = 6 * [\frac{t^7}{7}-\frac{2t^5}-{5}+\frac{2t^3}{3}-2t+2\int \frac{1}{t^2+1}dt] = &
+     \\ & \frac{6}{7} * t^7 - \frac{12}{5}t^5+4t^3-12t+12\arctan{t} + k = &
+     \\ &\frac{6}{7} \sqrt[6]{x^7}-\frac{12}{5}\sqrt[6]{x^5}+4+\sqrt{x}-12*\sqrt[6]{x}+12\arctan{(\sqrt[6]{x})}+k&
+    \end{split}
+\end{equation*}
+
 
 
 
