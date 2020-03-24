@@ -50,39 +50,37 @@ Beraz $\underline{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0}$ baldintza betetzen denez
 \end{equation*}
 \\
 Tayloren garapenaren formula 3.ordeneraino:
-\begin{align*}
+\begin{equation*}
+\begin{split}
     &f(x,y)=f(a,b)+\frac{1}{1!}(D_1f(a,b)(x-a)+D_2f(a,b)(y-b))+\\
-    &\frac{1}{2!}\left(D_{11}f(a,b)(x-a)^2 +2 D_{12}f(a,b)(x-a)(y-b)+D_{22}f(a,b)(y-b)^2\right)+\\
-    &\frac{1}{3!}\left(D_{111}f(a,b)(x-a)^3+3D_{112}f(a,b)(x-a)^2(y-b)+3D_{122}f(a,b)(x-a)(y-b)^2+\\
-    &D_{222}f(a,b)(y-b)^3)\right
-\end{align*}
-
-
-\begin{itemize}
-    \item $f(x,y)=\cos{x}+\cos{y}$  \qquad      $f(a,b)=f(0,\frac{\pi}{2})=\cos{0}\cos{\frac{\pi}{2}}=0$\\
-    $(a,b)=(0,\frac{\pi}{2})$
-    \item $D_1f(x,y)=-\sin{x}\cos{y}$ \qquad $D_1f(0,\frac{\pi}{2})=-\sin{0}\cos{\frac{\pi}{2}}=0$
-    \item
-    $D_2f(x,y)=-\cos{x}\sin{y}$\qquad $D_2f(0,\frac{\pi}{2})=-\cos{0}\sin{\frac{\pi}{2}=-1}$
-    \item 
-    $D_{11}f(x,y)=-\cos{x}\cos{y}$ \qquad $D_{11}f(0,\frac{\pi}{2})=-\cos(0)\cos{\frac{\pi}{2}}=0$
-    \item 
-    $D_{12}f(x,y)=\sin{x}\sin{y}$ \qquad
-    $D_{12}f(0,\frac{\pi}{2})=\sin{0}\sin{\frac{\pi}{2}}=0$
-    \item 
-    $D_{22}f(x,y)=-\cos{x}\cos{y}$ \qquad $D_{22}f(0,\frac{\pi}{2})=-\cos{0}\cos{\frac{\pi}{2}}=0$
-    \item
-    $D_{111}f(x,y)=-\sin{x}\cos{y}$ \qquad $D_{111}f(0,\frac{\pi}{2})=-\sin{0}\cos{\frac{\pi}{2}}=0$
-    \item 
-    $D_{112}f(x,y)=\cos{x}\sin{y}$ \qquad $D_{112}f(0,\frac{\pi}{2})=\cos{0}\sin{\frac{\pi}{2}}=1$
-    \item
-    $D_{122}f(x,y)=\sin{x}\cos{y}$ \qquad
-    $D_{122}f(0,\frac{\pi}{2})=\sin{0}\cos{\frac{\pi}{2}}=0$
-    \item
-    $D_{222}f(x,y)=\cos{x}\sin{y}$ \qquad
-    $D_{222}f(0,\frac{\pi}{2})=\cos{0}\sin{\frac{\pi}{2}}=1$
-\end{itemize}
-
+    &\frac{1}{2!}(D_{11}f(a,b)(x-a)^2 +2 D_{12}f(a,b)(x-a)(y-b)+D_{22}f(a,b)(y-b)^2)+\\
+    &\frac{1}{3|}(D_{111}f(a,b)(x-a)^3+3D_{112}f(a,b)(x-a)^2(y-b)+3D_{122}f(a,b)(x-a)(y-b)^2+\\
+    &D_{222}f(a,b)(y-b)^3)
+\end{split}
+\end{equation*}
+\begin{equation*}
+    \begin{array}{lll}
+    & f(x,y)=\cos{x}+\cos{y}\qquad &f(a,b)=f(0,\frac{\pi}{2})=\cos{0}\cos{\frac{\pi}{2}}=0\\
+    &(a,b)=(0,\frac{\pi}{2})&\\
+    \\
+    & D_1f(x,y)=-\sin{x}\cos{y}\qquad & D_1f(0,\frac{\pi}{2})=-\sin{0}\cos{\frac{\pi}{2}}=0 \\
+    & D_2f(x,y)=-\cos{x}\sin{y}& D_2f(0,\frac{\pi}{2})=-\cos{0}\sin{\frac{\pi}{2}=-1}\\
+    \\
+    & D_{11}f(x,y)=-\cos{x}\cos{y}& D_{11}f(0,\frac{\pi}{2})=-\cos(0)\cos{\frac{\pi}{2}}=0\\
+    
+    & D_{12}f(x,y)=\sin{x}\sin{y} &D_{12}f(0,\frac{\pi}{2})=\sin{0}\sin{\frac{\pi}{2}}=0\\
+    
+    &D_{22}f(x,y)=-\cos{x}\cos{y}&D_{22}f(0,\frac{\pi}{2})=-\cos{0}\cos{\frac{\pi}{2}}=0\\
+    \\
+    &D_{111}f(x,y)=-\sin{x}\cos{y}&D_{111}f(0,\frac{\pi}{2})=-\sin{0}\cos{\frac{\pi}{2}}=0\\
+    
+    &D_{112}f(x,y)=\cos{x}\sin{y}&D_{112}f(0,\frac{\pi}{2})=\cos{0}\sin{\frac{\pi}{2}}=1\\
+    
+    &D_{122}f(x,y)=\sin{x}\cos{y}&D_{122}f(0,\frac{\pi}{2})=\sin{0}\cos{\frac{\pi}{2}}=0\\
+    
+    &D_{222}f(x,y)=\cos{x}\sin{y}&D_{222}f(0,\frac{\pi}{2})=\cos{0}\sin{\frac{\pi}{2}}=1\\
+    \end{array}
+\end{equation*}
 Beraz gure taylorren garpenaren formulatik 0 atera zaizkigun gai guztiak ken ditzakegu
 \begin{equation*}
 \begin{split}
@@ -93,12 +91,16 @@ Beraz gure taylorren garpenaren formulatik 0 atera zaizkigun gai guztiak ken dit
 \end{split}
 \end{equation*}
 
-Emaitza
+Goian kalkulatutako gaiak formulan ordezkatuz
 \begin{align*}
     &f(x,y)=D_2f(0,\frac{\pi}{2})\left(y-\frac{\pi}{2}\right)+\frac{1}{3!}\left(3D_{112}f(0,\frac{\pi}{2})(x-0)^2(y-\frac{\pi}{2})+ D_{222}f(0,\frac{\pi}{2})(y-\frac{\pi}{3})^3 \right)=\\
     &-\left(y-\frac{\pi}{2}\right)+\frac{1}{6}\left(3x^2(y-\frac{\pi}{2})+(y-\frac{\pi}{2})^3\right)=-\left(y-\frac{\pi}{2}\right)+\frac{1}{2}x^2\left(y-\frac{\pi}{2}\right)+\frac{1}{6}\left(y-\frac{\pi}{2}\right)^3
 \end{align*}
 
+Beraz, ona hemen emaitza:
+\begin{equation*}
+    \boxed{f(x,y)=-\left(y-\frac{\pi}{2}\right)+\frac{1}{2}x^2\left(y-\frac{\pi}{2}\right)+\frac{1}{6}\left(y-\frac{\pi}{2}\right)^3}
+\end{equation*}
 
 \chapter{Aldagai anitzeko funtzioen analisi lokala}
 \section{Aldagai anitzeko funtzioen mutur baldintzatuak}
