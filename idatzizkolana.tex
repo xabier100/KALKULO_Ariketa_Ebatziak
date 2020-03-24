@@ -1,0 +1,123 @@
+\chapter{Aldagai anitzeko funtzioak}
+\section{Aldagai anitzeko funtzioen jarraitutasuna}
+\underline{10.2.ariketa} Aztertu funtzio honen jarraitasuna
+$$f(x,y) = \left\{ \begin{array}{cl}
+		x\sin \dfrac{1}{y} +y \sin \dfrac{1}{x},  &  x \neq 0 \, \mbox{ eta } \, y \neq 0, \\
+                 0,	                                &  x=0 \mbox{ edo } y=0.
+		   \end{array} \right. $$
+Funtizoa jarraia jatorrian \Longleftrightarrow
+\[
+\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0
+\]
+
+\begin{itemize}
+    \item Dimetsio bakarreko limitea
+    \begin{eqnarray*}
+        &g(y)&=\lim_{x \to 0}f(x,y)=\lim_{x \to 0} x\sin \dfrac{1}{y} +y \sin \dfrac{1}{x}= \nexists\\
+        &h(x)&=\lim_{y \to 0}f(x,y)=\lim_{y \to 0} x\sin \dfrac{1}{y} +y \sin \dfrac{1}{x}= \nexists
+    \end{eqnarray*}
+    
+    \item Limite berrituak
+    \begin{eqnarray*}
+        &&\lim_{y \to 0}g(y)=\nexists\\
+        &&\lim_{x \to 0}h(x)=\nexists
+    \end{eqnarray*}
+    
+    \item Norabide bakarreko limiteak \newline
+    \newline
+    $\displaystyle{ \lim_{ \begin{array}{c} \scriptstyle (x,y) \rightarrow (0,0) \\ \scriptstyle y=mx \\ \end{array} } f(x,y)= \lim_{x \rightarrow 0} x\sin \dfrac{1}{mx} +mx \sin \dfrac{1}{x}=\lim_{x \rightarrow 0} x\cdot\left(\sin \dfrac{1}{mx} +m \sin \dfrac{1}{x}\right)=\nexists } $.
+    \newline
+    $\displaystyle{ \lim_{ \begin{array}{c} \scriptstyle (x,y) \rightarrow (0,0) \\ \scriptstyle y=\lambda x^2 \\ \end{array} }f(x,y)= \lim_{x \rightarrow 0} x\sin \dfrac{1}{\lambda x^2} +\lambda x^2 \sin \dfrac{1}{x}=\lim_{x \rightarrow 0} x\cdot\left(\sin \dfrac{1}{\lambda x^2} +\lambda x \sin \dfrac{1}{x}\right)=\nexists } $.
+    \newpage
+    \item Definizioa aplikatu
+    \begin{align*}
+    &\lim_{x,y \to (0,0)}f(x,y)=0?\\
+    &\forall \epsilon >0 \quad \exists \delta(\epsilon)>0 \quad / \quad0<||(x,y)||<\delta \rightarrow ||f(x,y)||<\epsilon  \\
+    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq\left| x\right|\cdot\left |\sin\frac{1}{y}\right |+\left|y\right|\cdot\left|\sin\frac{1}{x}\right|\leq \abs{x}+\abs{y}\leq \delta < \epsilon\\
+    \end{align*}
+\end{itemize}
+
+Beraz $\underline{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0}$ baldintza betetzen denez funtzioa jarraitua da.
+
+
+
+
+\chapter{Aldagai anitzeko funtzioen diferentziagarritasuna}
+\section{Berretura-seriezko garapena}
+\underline{25.4.ariketa} Kalkulatu zazu funtzioaren Taylorren garapena ematen den puntuaren inguruan
+\begin{equation*}
+    f(x,y)=cos(x)cos(y), \quad (0,\frac{\pi}{2}) \text{ puntuan eta 3.ordenaraino.}
+\end{equation*}
+\\
+Tayloren garapenaren formula 3.ordeneraino:
+\begin{align*}
+    &f(x,y)=f(a,b)+\frac{1}{1!}(D_1f(a,b)(x-a)+D_2f(a,b)(y-b))+\\
+    &\frac{1}{2!}\left(D_{11}f(a,b)(x-a)^2 +2 D_{12}f(a,b)(x-a)(y-b)+D_{22}f(a,b)(y-b)^2\right)+\\
+    &\frac{1}{3!}\left(D_{111}f(a,b)(x-a)^3+3D_{112}f(a,b)(x-a)^2(y-b)+3D_{122}f(a,b)(x-a)(y-b)^2+\\
+    &D_{222}f(a,b)(y-b)^3)\right
+\end{align*}
+
+
+\begin{itemize}
+    \item $f(x,y)=\cos{x}+\cos{y}$  \qquad      $f(a,b)=f(0,\frac{\pi}{2})=\cos{0}\cos{\frac{\pi}{2}}=0$\\
+    $(a,b)=(0,\frac{\pi}{2})$
+    \item $D_1f(x,y)=-\sin{x}\cos{y}$ \qquad $D_1f(0,\frac{\pi}{2})=-\sin{0}\cos{\frac{\pi}{2}}=0$
+    \item
+    $D_2f(x,y)=-\cos{x}\sin{y}$\qquad $D_2f(0,\frac{\pi}{2})=-\cos{0}\sin{\frac{\pi}{2}=-1}$
+    \item 
+    $D_{11}f(x,y)=-\cos{x}\cos{y}$ \qquad $D_{11}f(0,\frac{\pi}{2})=-\cos(0)\cos{\frac{\pi}{2}}=0$
+    \item 
+    $D_{12}f(x,y)=\sin{x}\sin{y}$ \qquad
+    $D_{12}f(0,\frac{\pi}{2})=\sin{0}\sin{\frac{\pi}{2}}=0$
+    \item 
+    $D_{22}f(x,y)=-\cos{x}\cos{y}$ \qquad $D_{22}f(0,\frac{\pi}{2})=-\cos{0}\cos{\frac{\pi}{2}}=0$
+    \item
+    $D_{111}f(x,y)=-\sin{x}\cos{y}$ \qquad $D_{111}f(0,\frac{\pi}{2})=-\sin{0}\cos{\frac{\pi}{2}}=0$
+    \item 
+    $D_{112}f(x,y)=\cos{x}\sin{y}$ \qquad $D_{112}f(0,\frac{\pi}{2})=\cos{0}\sin{\frac{\pi}{2}}=1$
+    \item
+    $D_{122}f(x,y)=\sin{x}\cos{y}$ \qquad
+    $D_{122}f(0,\frac{\pi}{2})=\sin{0}\cos{\frac{\pi}{2}}=0$
+    \item
+    $D_{222}f(x,y)=\cos{x}\sin{y}$ \qquad
+    $D_{222}f(0,\frac{\pi}{2})=\cos{0}\sin{\frac{\pi}{2}}=1$
+\end{itemize}
+
+Beraz gure taylorren garpenaren formulatik 0 atera zaizkigun gai guztiak ken ditzakegu
+\begin{equation*}
+\begin{split}
+    &f(x,y)=\cancel{f(a,b)}+\frac{1}{1!}(\cancel{D_1f(a,b)(x-a)}+D_2f(a,b)(y-b))+\\
+    &\frac{1}{2!}(\cancel{D_{11}f(a,b)(x-a)^2} +2 \cancel{D_{12}f(a,b)(x-a)(y-b)}+\cancel{D_{22}f(a,b)(y-b)^2)}+\\
+    &\frac{1}{3|}(\cancel{D_{111}f(a,b)(x-a)^3}+3D_{112}f(a,b)(x-a)^2(y-b)+\cancel{3D_{122}f(a,b)(x-a)(y-b)^2}+\\
+    &D_{222}f(a,b)(y-b)^3)
+\end{split}
+\end{equation*}
+
+Emaitza
+\begin{align*}
+    &f(x,y)=D_2f(0,\frac{\pi}{2})\left(y-\frac{\pi}{2}\right)+\frac{1}{3!}\left(3D_{112}f(0,\frac{\pi}{2})(x-0)^2(y-\frac{\pi}{2})+ D_{222}f(0,\frac{\pi}{2})(y-\frac{\pi}{3})^3 \right)=\\
+    &-\left(y-\frac{\pi}{2}\right)+\frac{1}{6}\left(3x^2(y-\frac{\pi}{2})+(y-\frac{\pi}{2})^3\right)=-\left(y-\frac{\pi}{2}\right)+\frac{1}{2}x^2\left(y-\frac{\pi}{2}\right)+\frac{1}{6}\left(y-\frac{\pi}{2}\right)^3
+\end{align*}
+
+
+\chapter{Aldagai anitzeko funtzioen analisi lokala}
+\section{Aldagai anitzeko funtzioen mutur baldintzatuak}
+\underline{19.ariketa} Zer luze dira azalera txikiena duen V bolumeneko paralelepipedoaren ertzak? Eta azalera handienekoarenak?
+
+
+
+\chapter{Integral mugagabea}
+\underline{7.27.ariketa} Kalkulatu ondoko integral hau
+\begin{equation*}
+    \int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx;
+\end{equation*}
+
+
+
+\chapter{Integral mugatua}
+\section{Integral mugatuen aplikazioak}
+\underline{13.7.ariketa} Kalkulatu ondoko funtzioak osatzen duen gorputzaren bolumena
+
+\begin{equation*}
+    x^2+(y-b)^2=a^2,\ \text{torua}\ b>a \ \text{izanik;}
+\end{equation*}

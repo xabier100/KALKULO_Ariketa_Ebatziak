@@ -1,0 +1,413 @@
+%Erro honek gai guztietarako balio du
+
+
+\documentclass[12pt,epsf]{basque-book}
+%%%-\documentclass[12pt,epsf]{liburu}-%%%
+%%%-\documentclass[12pt,epsf]{libro}-%%%
+
+\usepackage{cancel}
+\usepackage{amsmath, amssymb, latexsym}
+%arydshln, 
+\usepackage{epsf, graphics, graphicx}
+\usepackage{fancyhdr}
+\usepackage{fncychap}
+\usepackage[latin1]{inputenc}
+%\usepackage{babel}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{psfrag}
+%\usepackage[spanish]{babel}
+%\usepackage{textcomp}
+\usepackage{theorem}
+%%%-\usepackage{wrapfig}-%%%
+%%%-\usepackage[T1]{fontenc}-%%%
+%\usepackage[utf8]{inputenc}
+\usepackage[basque]{babel}
+
+
+\makeindex
+\oddsidemargin 0.5cm
+\evensidemargin -0.5cm
+\textwidth 16cm
+\textheight 23.5cm
+\topmargin 0cm
+\footskip 1cm
+\allowdisplaybreaks
+
+\pagestyle{fancy}
+\renewcommand{\contentsname}{Aurkibidea}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\renewcommand{\chaptermark}[1]{ \markboth{ \thechapter \ #1 }{}}
+%\renewcommand{\chaptermark}[1]{ \markboth{ #1 \ \thechapter }{} }
+\renewcommand{\thepage}{\roman{page}}
+%\chapterstyle{change}
+\fancyhf{} 
+\fancyhead[LE,RO]{\small\slshape\thepage}
+\fancyhead[RE]{\small\slshape \nouppercase{\leftmark}}
+\fancyhead[LO]{\small\slshape \nouppercase{\rightmark}}
+
+
+%%%%%%%%%%%%%%%%%%
+%%%-\setlength{\headheight}{14pt}-%%%
+%\setcounter{secnumdepth}{3}
+%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\NN}{\mathbb N}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\II}{\mathbb I}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\CC}{\mathbb C}
+
+\newcommand{\kala}{\mathcal A}
+\newcommand{\kalb}{\mathcal B}
+%\newcommand{\calb}{\mathcal B}
+\newcommand{\kalc}{\mathcal C}
+%\newcommand{\ce}{\mbox{${\cal C}$}}
+\newcommand{\kale}{\mathcal E}
+\newcommand{\ff}{\mathbb F}
+%\newcommand{\efe}{\mathbb F}
+%\newcommand{\FF}{\mathbb F}
+\newcommand{\kalf}{\mathcal F}
+%\newcommand{\fe}{\mbox{${\mathcal F}$}}
+\newcommand{\kalg}{\mathcal G}
+%\newcommand{\mge}{\mbox{${\cal G}$}}
+\newcommand{\kalh}{\mathcal H}
+\newcommand{\kk}{\mathbb K}
+%\newcommand{\KK}{\mathbb K}
+\newcommand{\kall}{\mathcal L}
+\newcommand{\kalm}{\mathcal M}
+%\newcommand{\calm}{\mathcal M}
+\newcommand{\kalp}{\mathcal P}
+%\newcommand{\pe}{\mbox{${\mathcal P}$}}
+\newcommand{\kalr}{\mathcal R}
+%\newcommand{\calr}{\mathcal R}
+\newcommand{\rel}{\mathcal R}
+%\newcommand{\rel}{\mbox{${\mathcal R}$}}
+\newcommand{\kals}{\mathcal S}
+%\newcommand{\ese}{\mbox{${\cal S}$}}
+\newcommand{\kalt}{\mathcal T}
+%\newcommand{\te}{\mbox{${\cal T}$}}
+\newcommand{\kalv}{\mathcal V}
+%\newcommand{\calv}{\mathcal V}
+
+
+\newcommand{\aalj}{\mbox{{\rm anizalj }}}
+\newcommand{\ageo}{\mbox{{\rm anizgeo }}}
+\newcommand{\antz}{\ensuremath{\stackrel{a}{\sim}}}
+\newcommand{\Ao}{\stackrel{\circ}{A}}
+\newcommand{\arccot}{\mbox{{\rm arccot }}}
+\newcommand{\Arg}{\mbox{{\rm Arg}}}
+\newcommand{\bek}[1]{\mbox{\textbf{\textit{#1}}}}
+\newcommand{\bin}[2]{\left( \begin{array}{@{}c@{}}
+			          #1 \\ #2
+			    \end{array} \right) }
+\newcommand{\Bo}{\stackrel{\circ}{B}}
+%\newcommand{\diag}{\mbox{{\rm Diag }}}
+%\newcommand{\ed}{\ensuremath{\stackrel{d}{\sim}}} 
+%\newcommand{\ef}{\ensuremath{\stackrel{e.f.}{\sim}}} 
+%\newcommand{\eh}{\ensuremath{\stackrel{\ese}{\sim}}} 
+\newcommand{\Eo}{\stackrel{\circ}{E}}
+%\newcommand{\ep}{\ensuremath{\stackrel{\te}{\sim}}} 
+%\newcommand{\eps}{\ensuremath{\varepsilon}}
+\newcommand{\epsi}{\ensuremath{\varepsilon}}
+\newcommand{\err}{\ensuremath{\stackrel{err}{\sim}}}
+%\newcommand{\erre}{\ensuremath{\stackrel{r}{\sim}}} 
+\newcommand{\ext}{\mbox{{\rm ext}}}
+%\newcommand{\gammas}{\ensuremath{\stackrel{\Gamma_S}{\sim}}}
+\newcommand{\gl}{\mbox{{\rm GL}}}
+\newcommand{\im}{\mbox{{\rm Im }}}
+\newcommand{\ind}{\mbox{{\rm ind }}}
+\newcommand{\ir}{\mbox{{\rm Im }}}
+%\newcommand{\im}{\mbox{{\rm Im }}}
+\newcommand{\kar}{\mbox{{\rm card }}}
+\newcommand{\Log}{\mbox{{\rm Log }}}
+%%%-KENDU-\newcommand{\max}{\mbox{{\rm max }}}
+%\newcommand{\mcd}{\mbox{{\rm m.c.d. }}}
+%\newcommand{\mcd}{\mbox{{\rm mcd }}}
+%\newcommand{\mcd}{\mbox{{\rm zkh }}}
+%\newcommand{\mcm}{\mbox{{\rm m.c.m. }}}
+%\newcommand{\mcm}{\mbox{{\rm mcm }}}
+%\newcommand{\mcm}{\mbox{{\rm mkt }}}
+%%%-KENDU-\newcommand{\min}{\mbox{{\rm min }}}
+%\newcommand{\mini}{\mbox{{\rm min }}}
+\newcommand{\mkt}{\mbox{{\rm mkt }}}
+%\newcommand{\mod}{\mbox{{\rm mod }}}
+\newcommand{\NNo}{\stackrel{\circ}{\NN}}
+\newcommand{\norma}[1]{\parallel #1 \parallel}
+\newcommand{\nukleo}{\mbox{{\rm Ker }}}
+%\newcommand{\nucleo}{\mbox{{\rm Ker }}}
+%\newcommand{\pf}{\ensuremath{\stackrel{PF}{\sim}}} 
+%\newcommand{\pt}{\ensuremath{\stackrel{PT}{\sim}}}
+\newcommand{\rang}{\mbox{{\rm rang }}}
+%\newcommand{\rank}{\mbox{{\rm rang }}}
+%\newcommand{\rank}{\mbox{{\rm rank }}}
+\newcommand{\re}{\mbox{{\rm Re }}}
+%\newcommand{\refc}[1]{(\ref{#1})}
+%\newcommand{\se}{\ensuremath{\stackrel{s}{\sim}}}
+%\newcommand{\si}{\ensuremath{\stackrel{s}{\sim}}}
+\newcommand{\sig}{\mbox{{\rm sig}}}
+\newcommand{\zkh}{\mbox{{\rm zkh}}}
+\newcommand{\zn}{\mbox{{\rm zeinu}}}
+\newcommand{\zut}{\ensuremath{\stackrel{zut}{\sim}}}
+%\newcommand{\¿}{\mbox{?`}}
+
+
+%\def\alg{\mathop{\rm aniz alj}\nolimits}
+%\def\geo{\mathop{\rm aniz geo}\nolimits}
+%\def\kar{\mathop{\rm card}\nolimits}
+%\def\card{\mathop{\rm card}\nolimits}
+%\def\Im{\mathop{\rm Im}\nolimits}
+%\def\ind{\mathop{\rm ind}\nolimits}
+%\def\log{\mathop{\rm log}\nolimits}
+%\def\mcd{\mathop{\rm mcd}\nolimits}
+%\def\mcm{\mathop{\rm mcm}\nolimits}
+%\def\mini{\mathop{\rm mín}\nolimits}
+%\def\mkt{\mathop{\rm mkt}\nolimits}
+%\def\sig{\mathop{\rm sig}\nolimits}
+%\def\zkh{\mathop{\rm zkh}\nolimits}
+
+
+
+\newcommand{\ebazpen}{\noindent{\bf Ebazpena.}}
+\newcommand{\erantzun}{\noindent{\bf Erantzuna.}}
+\newcommand{\froga}{\noindent{\bf Froga.}}
+\newcommand{\hitzarmen}{\noindent{\bf Hitzarmena.}}
+\newcommand{\idazkera}{\noindent{\bf Idazkera.}}
+\newcommand{\notacion}{\noindent{\bf Notazioa. }}
+\newcommand{\ohar}{\noindent{\bf Oharra.}}
+\newcommand{\oharrak}{\noindent{\bf Oharrak.}}
+
+
+
+\theoremstyle{change}
+%\newtheorem{theorem}{Teorema.}[chapter]
+\newtheorem{teorema}{Teorema}[chapter]
+%\newtheorem{theorem}{Teorema.}[section]
+%\newtheorem{teorema}{Teorema.}[section]
+
+%\newtheorem{ex}[theorem]{Ejemplo}
+%\newtheorem{ex}[theorem]{Adibidea.}
+\newtheorem{adibide}[teorema]{Adibidea.}
+%\newtheorem{example}[theorem]{Adibidea.}
+%\newtheorem{exs}[theorem]{Adibideak.}
+%\newtheorem{examples}[theorem]{Adibideak.}
+\newtheorem{adibideak}[teorema]{Adibideak.}
+
+%\newtheorem{conjetura}[theorem]{Conjetura}
+%\newtheorem{aieru}[theorem]{Aierua.}
+\newtheorem{aieru}[teorema]{Aierua.}
+
+%\newtheorem{definition}[theorem]{Definición}
+%\newtheorem{definition}[theorem]{Definizioa.}
+\newtheorem{definizio}[teorema]{Definizioa.}
+
+%\newtheorem{corollary}[theorem]{Corolario}
+%\newtheorem{corollarydefinition}[theorem]{Corolario-Definición}
+%\newtheorem{corollary}[theorem]{Korolarioa.}
+\newtheorem{korolario}[teorema]{Korolarioa.}
+
+%\newtheorem{lemma}[theorem]{Lema.}
+\newtheorem{lema}[teorema]{Lema.}
+
+%\newtheorem{rem}[theorem]{Observación}
+%\newtheorem{obs}[theorem]{Oharra.}
+%\newtheorem{rem}[theorem]{Oharra.}
+%\newtheorem{remarks}[theorem]{Oharrak.}
+%\newtheorem{ohar}[teorema]{Oharra.}
+%\newtheorem{oharrak}[teorema]{Oharrak.}
+
+%\newtheorem{consecuencia}[theorem]{Ondorioa.}
+%\newtheorem{cons}[theorem]{Ondorioak.}
+%\newtheorem{ondorio}[theorem]{Ondorioa.}
+\newtheorem{ondorio}[teorema]{Ondorioa.}
+\newtheorem{ondorioak}[teorema]{Ondorioak.}
+
+%\newtheorem{iprinciple}[theorem]{Indukzio-printzipioa.}
+%\newtheorem{principle}[theorem]{Indukzio-printzipioa.}
+%\newtheorem{oprinciple}[theorem]{Ordezkapen-printzipioa.}
+%\newtheorem{principle}[theorem]{Ordezkapen-printzipioa.}
+\newtheorem{printzipio}[teorema]{Printzipioa.}
+
+%\newtheorem{problem}{Problema.}
+\newtheorem{problema}[teorema]{Problema.}
+
+%\newtheorem{property}[theorem]{Propietatea.}
+\newtheorem{propietate}[teorema]{Propietatea.}
+%\newtheorem{ppts}[theorem]{Propietateak.}
+%\newtheorem{properties}[theorem]{Propietateak.}
+\newtheorem{propietateak}[teorema]{Propietateak.}
+
+%\newtheorem{proposition}[theorem]{Proposici\'on}
+%\newtheorem{proposition}[theorem]{Proposizioa.}
+\newtheorem{proposizio}[teorema]{Proposizioa.}
+
+
+%\newenvironment{ejemplo}{\begin{example} \em } {\end{example}}
+%\newenvironment{example}{\begin{ex} \rm} {\end{ex}}
+\newenvironment{adi}{\begin{adibide} \em } {\end{adibide}}
+%\newenvironment{ejemplos}{\begin{examples} \em 
+%                          \begin{description} \item \end{description}
+%                          \begin{enumerate} \end{enumerate}}
+%                         {\end{examples}}
+%\newenvironment{examples}{\begin{exs} \rm
+%                          \begin{description} \item \end{description}}
+%                         {\end{exs}}
+%\newenvironment{examples}{\begin{exs} \rm
+%                          \begin{description} \item \end{description} 
+%                          \begin{enumerate} \end{enumerate}}
+%                         {\end{exs}}
+\newenvironment{adiitem}{\begin{adibideak} \em 
+                           \begin{description} \item \end{description}}
+                          {\end{adibideak}}
+%\newenvironment{adibideak}{\begin{adibideak} \em 
+%                           \begin{description} \item \end{description}
+%                           \begin{enumerate} \end{enumerate}}
+%                          {\end{adibideak}}
+
+%\newenvironment{observacion}{\begin{obs} \em } {\end{obs}}
+%\newenvironment{observacion}{\begin{rem} \em } {\end{rem}}
+%\newenvironment{oharra}{\begin{obs} \em } {\end{obs}}
+%\newenvironment{oharra}{\begin{rem} \em } {\end{rem}}
+%\newenvironment{oharra}{\begin{ohar} \em } {\end{ohar}}
+%\newenvironment{observaciones}{\begin{remarks} \em 
+%                               \begin{description} \item \end{description}
+%                               \begin{enumerate} \end{enumerate}}
+%                              {\end{remarks}}
+%\newenvironment{oharrak}{\begin{remarks} \em
+%                         \begin{description} \item \end{description}
+%                         \begin{enumerate} \end{enumerate}}
+%                        {\end{remarks}}
+%\newenvironment{oharitem}{\begin{oharrak} \em 
+%                         \begin{description} \item \end{description}
+%                         \begin{enumerate} \end{enumerate}}
+%                         {\end{oharrak}}
+
+%\newenvironment{consecuencias}{\begin{cons} \em 
+%                               \begin{description} \item \end{description}
+%                               \begin{enumerate} \end{enumerate}}
+%                              {\end{cons}}
+%\newenvironment{ondorioak}{\begin{cons} \em
+%                           \begin{description} \item \end{description}
+%                           \begin{enumerate} \end{enumerate}}
+%                          {\end{cons}}
+\newenvironment{ondoitem}{\begin{ondorioak} \em 
+                         \begin{description} \item \end{description}}
+                         {\end{ondorioak}}
+
+%\newenvironment{properties}{\begin{ppts}
+%                            \begin{description} \item \end{description}}
+%                           {\end{ppts}}
+\newenvironment{propiitem}{\begin{propietateak} \em 
+                           \begin{description} \item \end{description}}
+                          {\end{propietateak}}
+
+
+
+\bibliographystyle{apalike}
+%(apalike eredu bat da, beste asko daude. Elenak google-rekin bilatzen
+%ditu).
+
+
+
+\begin{document}
+
+
+\renewcommand{\chaptername}{Gaia}
+\renewcommand{\DOCH}{\CNoV \thechapter \space \CNV \FmN{\chaptername} \par\nobreak}
+
+\setcounter{secnumdepth}{3}
+
+%0
+%\thispagestyle{empty}
+%
+%\input{0prev/izenburua}
+%
+%\newpage
+%
+%0
+%\thispagestyle{empty}
+%\cleardoublepage
+%
+%\pagebreak
+%
+
+%1
+%\thispagestyle{empty}
+%
+%\input{0prev/eskerrak}
+%
+%\newpage
+%
+%2
+%\thispagestyle{empty}
+%\cleardoublepage
+%
+%\pagebreak
+%
+%3
+%\thispagestyle{empty}
+%
+%\input{0prev/0intro}
+%
+%\pagebreak
+%
+%4
+%\thispagestyle{empty}
+%\cleardoublepage
+%
+%\pagebreak
+%
+
+%\title{ \textbf{Analisi Matematikoa \\ Ariketa ebatziak} }
+
+\title{ \textbf{Kalkulua \\ Ariketa ebatziak} }
+
+\author{Xabier Garrote, Julen Ortiz, Aitor Velaz eta Mikel Alvarez}
+
+\date{\today a}
+%\date{2017ko abuztuaren 28a}
+
+
+\maketitle
+
+\setcounter{page}{1}
+
+\tableofcontents
+
+
+\vfill{}
+%
+%\vspace{2mm}
+%
+%\noindent \textbf{Bibliografía} \dotfill\ \textbf{193}
+%
+%\vspace{2mm}
+%
+%\noindent \textbf{Índice alfabético} \dotfill\ \textbf{195}
+%
+%
+\pagebreak
+
+\renewcommand{\thepage}{\arabic{page}}
+
+\setcounter{page}{1}
+
+
+%%%%%%%%%%%%%%   ANALISI MATEMATIKOA   %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\input{analisia/AMIdatzizkolana/Idatzizkolana}
+%
+%%%%%%%%%%%%%%   ANALISI MATEMATIKOA   %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%   KALKULUA   %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\input{idatzizkolana}
+%
+%%%%%%%%%%%%%%   KALKULUA   %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printindex
+
+\end{document}
