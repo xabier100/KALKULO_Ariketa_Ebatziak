@@ -5,12 +5,18 @@ $$f(x,y) = \left\{ \begin{array}{cl}
 		x\sin \dfrac{1}{y} +y \sin \dfrac{1}{x},  &  x \neq 0 \, \mbox{ eta } \, y \neq 0, \\
                  0,	                                &  x=0 \mbox{ edo } y=0.
 		   \end{array} \right. $$
-Funtizoa jarraia jatorrian $\Longleftrightarrow$
-\[
-\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0
-\]
+		   
+		 
+Funtzio bat jatorrian jarraia izateko honako baldintza hau bete behar du:
 
-\begin{itemize}
+\begin{equation*}
+    \text{Funtzioa jarraia jatorrian}
+    \Longleftrightarrow
+    \boxed{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0}
+\end{equation*}
+	   
+Baldintza hau betetzen den edo ez jakiteko limitea jatorrian kalkulatu behar dugu eta horretarako honako pausu hauek jarraituko ditugu:
+\begin{enumerate}
     \item Dimetsio bakarreko limitea
     \begin{eqnarray*}
         &g(y)&=\lim_{x \to 0}f(x,y)=\lim_{x \to 0} x\sin \dfrac{1}{y} +y \sin \dfrac{1}{x}= \nexists\\
@@ -23,23 +29,41 @@ Funtizoa jarraia jatorrian $\Longleftrightarrow$
         &&\lim_{x \to 0}h(x)=\nexists
     \end{eqnarray*}
     
+    Limite berrituak ez dira existitzen eta ezin dugu 1.9.teorema aplikatu, beraz ez dugu informaziorik lortu. 
+    
+    Jarraian, norabide bakarreko limiteekin probatuko dugu. Horrela ikusiko dugu norabide ezberdinez jatorrira hurbiltzen bagara ea limitea 0 den.
     \item Norabide bakarreko limiteak \newline
     \newline
     $\displaystyle{ \lim_{ \begin{array}{c} \scriptstyle (x,y) \rightarrow (0,0) \\ \scriptstyle y=mx \\ \end{array} } f(x,y)= \lim_{x \rightarrow 0} x\sin \dfrac{1}{mx} +mx \sin \dfrac{1}{x}=\lim_{x \rightarrow 0} x\cdot\left(\sin \dfrac{1}{mx} +m \sin \dfrac{1}{x}\right)=\nexists } $.
     \newline
     $\displaystyle{ \lim_{ \begin{array}{c} \scriptstyle (x,y) \rightarrow (0,0) \\ \scriptstyle y=\lambda x^2 \\ \end{array} }f(x,y)= \lim_{x \rightarrow 0} x\sin \dfrac{1}{\lambda x^2} +\lambda x^2 \sin \dfrac{1}{x}=\lim_{x \rightarrow 0} x\cdot\left(\sin \dfrac{1}{\lambda x^2} +\lambda x \sin \dfrac{1}{x}\right)=\nexists } $.
-    \newpage
+    
+    Norabide bakarreko limiteak existitzen ez direnez ez digute informazio gehiago eman ea limite bikoitza existituko ote den eta ze balio edukiko duen. 
+    
+    Beraz, azken aukera limiteen definizioa apikatzea da. 
     \item Definizioa aplikatu
     \begin{align*}
-    &\lim_{x,y \to (0,0)}f(x,y)=0?\\
+    &\lim_{x,y \to (0,0)}f(x,y)=0\\
     &\forall \epsilon >0 \quad \exists \delta(\epsilon)>0 \quad / \quad0<||(x,y)||<\delta \rightarrow ||f(x,y)||<\epsilon  \\
-    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq\left| x\right|\cdot\left |\sin\frac{1}{y}\right |+\left|y\right|\cdot\left|\sin\frac{1}{x}\right|\leq \abs{x}+\abs{y}\leq \delta < \epsilon\\
+    \\
+    &\text{Hau da frogatu behar dugun baldintza}\\
+    &\forall \epsilon >0 \quad \exists \delta(\epsilon)>0 \quad / \quad0<||(x,y)||<\delta \rightarrow \left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|<\epsilon  \\
+    &\text{ Hasteko ezkerreko atala hartu eta sinplifikatzen saiatuko gara}\\
+    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq\left| x\right|\cdot\left |\sin\frac{1}{y}\right |+\left|y\right|\cdot\left|\sin\frac{1}{x}\right|\leq \abs{x}+\abs{y}\\
+    &\text{Aurreko desberdintzaren eskuineko atalean lortu duguna ikusita,}\\
+    &\text{aukerarik honena baturaren norma erabiltzea da} \quad \| (x,y) \| =\abs{x}+\abs{y}\ \\
+    &\| (x,y)-(0,0) \| < \delta \, \text{bada,} \, | x | + | y | < \delta \, \text{dugu}\\
+    &\text{eta hortik lortu dugun}\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq \abs{x}+\abs{y}\quad \text{desberdintzaz baliatuz}\\
+    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|< \delta\quad \text{izango dugu}\\
+    &\text{Ondorioz nahikoa da } \delta < \epsilon \text{ izatea }\\
+    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right| < \epsilon \ \text{ere beteko delako}\\
+    &\text{Definizioa betetzen dela frogatu dugu} \quad \boxed{\lim_{x,y \to (0,0)}f(x,y)=0}
     \end{align*}
-\end{itemize}
+\end{enumerate}
 
-Beraz $\underline{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0}$ baldintza betetzen denez funtzioa jarraitua da.
-
-
+\begin{align*}
+    &\text{Alde batetik,}\lim_{x,y \to (0,0)}f(x,y)=0\quad \text{frogatu dugu, bestetik,}\quad f(0,0)=0 \quad \text{da.}.\\ &\text{Ondorioz} \quad \boxed{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0} \quad \text{beteko da eta funtzioa jarraia da.}
+\end{align*}
 
 
 \chapter{Aldagai anitzeko funtzioen diferentziagarritasuna}
@@ -114,6 +138,7 @@ Beraz, ona hemen emaitza:
     \int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx;
 \end{equation*}
 Kalkulua (TODO: Azaldu)
+Integrala berehalakoa ez denez integrazio metodo bat erabili behar dugu, kasu honetan aldagai-aldaketa erabiliko dugu. $t=\sqrt{x}$ eta $dt=dx$ ordezkapenak egingu ditugu.
 \begin{equation*}
     \begin{split}
     &\int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx = \int \frac{t^3-t}{t^2+1}6t^5dt = 6 * \int \frac{t^8-t^6}{t^2+1}dt =
