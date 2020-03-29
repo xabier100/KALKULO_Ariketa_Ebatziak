@@ -15,7 +15,7 @@ Funtzio bat jatorrian jarraia izateko honako baldintza hau bete behar du:
     \boxed{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0}
 \end{equation*}
 	   
-Baldintza hau betetzen den edo ez jakiteko limitea jatorrian kalkulatu behar dugu eta horretarako honako pausu hauek jarraituko ditugu:
+Baldintza hau betetzen den edo ez jakiteko funtzioaren limitea jatorrian kalkulatu behar dugu. Horretarako, honako pausu hauek jarraituko ditugu:
 \begin{enumerate}
     \item Dimetsio bakarreko limitea
     \begin{eqnarray*}
@@ -29,7 +29,7 @@ Baldintza hau betetzen den edo ez jakiteko limitea jatorrian kalkulatu behar dug
         &&\lim_{x \to 0}h(x)=\nexists
     \end{eqnarray*}
     
-    Limite berrituak ez dira existitzen eta ezin dugu 1.9.teorema aplikatu, beraz ez dugu informaziorik lortu. 
+    Limite berrituak ez dira existitzen.Hortaz, ezin dugu 1.9.teorema aplikatu eta ez dugu informaziorik lortu. 
     
     Jarraian, norabide bakarreko limiteekin probatuko dugu. Horrela ikusiko dugu norabide ezberdinez jatorrira hurbiltzen bagara ea limitea 0 den.
     \item Norabide bakarreko limiteak \newline
@@ -38,7 +38,7 @@ Baldintza hau betetzen den edo ez jakiteko limitea jatorrian kalkulatu behar dug
     \newline
     $\displaystyle{ \lim_{ \begin{array}{c} \scriptstyle (x,y) \rightarrow (0,0) \\ \scriptstyle y=\lambda x^2 \\ \end{array} }f(x,y)= \lim_{x \rightarrow 0} x\sin \dfrac{1}{\lambda x^2} +\lambda x^2 \sin \dfrac{1}{x}=\lim_{x \rightarrow 0} x\cdot\left(\sin \dfrac{1}{\lambda x^2} +\lambda x \sin \dfrac{1}{x}\right)=\nexists } $.
     
-    Norabide bakarreko limiteak existitzen ez direnez ez digute informazio gehiago eman ea limite bikoitza existituko ote den eta ze balio edukiko duen. 
+    Norabide bakarreko limiteak existitzen ez direnez ez digute informazio gehiago eman.
     
     Beraz, azken aukera limiteen definizioa apikatzea da. 
     \item Definizioa aplikatu
@@ -51,19 +51,27 @@ Baldintza hau betetzen den edo ez jakiteko limitea jatorrian kalkulatu behar dug
     &\text{ Hasteko ezkerreko atala hartu eta sinplifikatzen saiatuko gara}\\
     &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq\left| x\right|\cdot\left |\sin\frac{1}{y}\right |+\left|y\right|\cdot\left|\sin\frac{1}{x}\right|\leq \abs{x}+\abs{y}\\
     &\text{Aurreko desberdintzaren eskuineko atalean lortu duguna ikusita,}\\
-    &\text{aukerarik honena baturaren norma erabiltzea da} \quad \| (x,y) \| =\abs{x}+\abs{y}\ \\
-    &\| (x,y)-(0,0) \| < \delta \, \text{bada,} \, | x | + | y | < \delta \, \text{dugu}\\
-    &\text{eta hortik lortu dugun}\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq \abs{x}+\abs{y}\quad \text{desberdintzaz baliatuz}\\
+    &\text{aukerarik honena baturaren norma erabiltzea da} \;\; \| (x,y) \| =\abs{x}+\abs{y}\ \\
+    &\| (x,y)\| < \delta \quad \text{bada,} \quad | x | + | y | < \delta \quad \text{dugu}\\
+    &\text{eta hortik lortu dugun}\quad\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq \abs{x}+\abs{y}\quad \text{desberdintzaz baliatuz}\\
     &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|< \delta\quad \text{izango dugu}\\
-    &\text{Ondorioz nahikoa da } \delta < \epsilon \text{ izatea }\\
-    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right| < \epsilon \ \text{ere beteko delako}\\
-    &\text{Definizioa betetzen dela frogatu dugu} \quad \boxed{\lim_{x,y \to (0,0)}f(x,y)=0}
+    &\text{Ondorioz nahikoa da}\quad \delta < \epsilon \quad \text{izatea }\\
+    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right| < \epsilon \quad \text{ere beteko delako}\\
+    &\text{Hau guztiarekin limite bikoitza 0 dela frogatu dugu} \quad \boxed{\lim_{x,y \to (0,0)}f(x,y)=0}
     \end{align*}
 \end{enumerate}
 
 \begin{align*}
-    &\text{Alde batetik,}\lim_{x,y \to (0,0)}f(x,y)=0\quad \text{frogatu dugu, bestetik,}\quad f(0,0)=0 \quad \text{da.}.\\ &\text{Ondorioz} \quad \boxed{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0} \quad \text{beteko da eta funtzioa jarraia da.}
+    &\text{Alde batetik,}\lim_{x,y \to (0,0)}f(x,y)=0\quad \text{frogatu dugu, bestetik,}\quad f(0,0)=0 \quad \text{da.}.\\ &\text{Ondorioz} \quad \boxed{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0} \quad \text{beteko da eta funtzioa jarraia da jatorrian.}
 \end{align*}
+
+
+
+
+
+
+
+
 
 
 \chapter{Aldagai anitzeko funtzioen diferentziagarritasuna}
@@ -72,16 +80,17 @@ Baldintza hau betetzen den edo ez jakiteko limitea jatorrian kalkulatu behar dug
 \begin{equation*}
     f(x,y)=cos(x)cos(y), \quad (0,\frac{\pi}{2}) \text{ puntuan eta 3.ordenaraino.}
 \end{equation*}
-\\
-Tayloren garapenaren formula 3.ordeneraino:
 \begin{equation*}
 \begin{split}
+    &\text{Tayloren garapenaren formula 3.ordeneraino:}\\
     &f(x,y)=f(a,b)+\frac{1}{1!}(D_1f(a,b)(x-a)+D_2f(a,b)(y-b))+\\
     &\frac{1}{2!}(D_{11}f(a,b)(x-a)^2 +2 D_{12}f(a,b)(x-a)(y-b)+D_{22}f(a,b)(y-b)^2)+\\
     &\frac{1}{3|}(D_{111}f(a,b)(x-a)^3+3D_{112}f(a,b)(x-a)^2(y-b)+3D_{122}f(a,b)(x-a)(y-b)^2+\\
-    &D_{222}f(a,b)(y-b)^3)
+    &D_{222}f(a,b)(y-b)^3)\\
 \end{split}
 \end{equation*}
+
+Lehenengo eta behin, formulan ordezkatu behar ditugun gai guztiak kalkulatuko ditugu.
 \begin{equation*}
     \begin{array}{lll}
     & f(x,y)=\cos{x}+\cos{y}\qquad &f(a,b)=f(0,\frac{\pi}{2})=\cos{0}\cos{\frac{\pi}{2}}=0\\
@@ -105,21 +114,23 @@ Tayloren garapenaren formula 3.ordeneraino:
     &D_{222}f(x,y)=\cos{x}\sin{y}&D_{222}f(0,\frac{\pi}{2})=\cos{0}\sin{\frac{\pi}{2}}=1\\
     \end{array}
 \end{equation*}
-Beraz gure taylorren garpenaren formulatik 0 atera zaizkigun gai guztiak ken ditzakegu
+Ondoren, 0 atera zaizkigun gai guztiak formulatik ken ditzakegu
 \begin{equation*}
 \begin{split}
     &f(x,y)=\cancel{f(a,b)}+\frac{1}{1!}(\cancel{D_1f(a,b)(x-a)}+D_2f(a,b)(y-b))+\\
     &\frac{1}{2!}(\cancel{D_{11}f(a,b)(x-a)^2} +2 \cancel{D_{12}f(a,b)(x-a)(y-b)}+\cancel{D_{22}f(a,b)(y-b)^2)}+\\
     &\frac{1}{3|}(\cancel{D_{111}f(a,b)(x-a)^3}+3D_{112}f(a,b)(x-a)^2(y-b)+\cancel{3D_{122}f(a,b)(x-a)(y-b)^2}+\\
-    &D_{222}f(a,b)(y-b)^3)
+    &D_{222}f(a,b)(y-b)^3)\\
+    &f(x,y)=D_2f(a,b)\left(y-b\right)+\frac{1}{3!}\left(3D_{112}f(a,b)(x-a)^2(y-b)+ D_{222}f(a,b)(y-b)^3 \right)\\
+    &\\
 \end{split}
 \end{equation*}
-
-Goian kalkulatutako gaiak formulan ordezkatuz
+Azkenik goian kalkulatutako gaiak formulan ordezkatuko ditugu.
 \begin{align*}
     &f(x,y)=D_2f(0,\frac{\pi}{2})\left(y-\frac{\pi}{2}\right)+\frac{1}{3!}\left(3D_{112}f(0,\frac{\pi}{2})(x-0)^2(y-\frac{\pi}{2})+ D_{222}f(0,\frac{\pi}{2})(y-\frac{\pi}{3})^3 \right)=\\
     &-\left(y-\frac{\pi}{2}\right)+\frac{1}{6}\left(3x^2(y-\frac{\pi}{2})+(y-\frac{\pi}{2})^3\right)=-\left(y-\frac{\pi}{2}\right)+\frac{1}{2}x^2\left(y-\frac{\pi}{2}\right)+\frac{1}{6}\left(y-\frac{\pi}{2}\right)^3
 \end{align*}
+
 
 Beraz, ona hemen emaitza:
 \begin{equation*}
@@ -130,6 +141,68 @@ Beraz, ona hemen emaitza:
 \section{Aldagai anitzeko funtzioen mutur baldintzatuak}
 \underline{19.ariketa} Zer luze dira azalera txikiena duen V bolumeneko paralelepipedoaren ertzak? Eta azalera handienekoarenak?
 
+\begin{equation*}
+    V = xyz
+\end{equation*}
+\begin{equation*}
+    A(X,Y,Z) = 2xy + 2xz + 2zy = 2(xy+xz+xy)
+\end{equation*}
+\begin{equation*}
+    F(x,y,z) = (2xy + 2xz + 2zy) + \lambda(xyz-V)
+\end{equation*}
+\newline
+\begin{center}
+$\left.
+  \begin{array}{111}
+    & D_{1f}(x,y,z)=2(y+z) + \lambda(yz)& \\
+    & D_{2f}(x,y,z)=2(x+z) + \lambda(xz)& \\
+    & D_{1f}(x,y,z)=2(x+y) + \lambda(yx)& \\
+    & V = xyz 
+  \end{array}
+  \right\}
+  \rightarrow
+  \left.
+  \begin{array}{111}
+    & 2(y+z) + \lambda(yz) = 0& \\
+    & 2(x+z) + \lambda(xz) = 0& \\
+    & 2(x+y) + \lambda(yx) = 0& \\
+    & V = xyz 
+  \end{array}
+  \right\}
+  \rightarrow
+    \left.
+  \begin{array}{111}
+    & \lambda = \frac{-2(y+z)}{yz}& \\
+    & \lambda = \frac{-2(x+z)}{xz}& \\
+    & \lambda = \frac{-2(x+y)}{yx}& \\
+  \end{array}
+  \right\}
+  \rightarrow
+  \left\{
+  \begin{array}{111}
+    & \frac{-2(y+z)}{yz} = \frac{-2(x+z)}{xz} \rightarrow (y+z)xz=(x+z)yz \rightarrow z(yx+zx-yx-zy)=0&\\
+    & \frac{-2(y+z)}{yz} = \frac{-2(x+y)}{xy} \rightarrow (y+z)xy=(x+y)yz \rightarrow xy^2 + xyz = xyz -y^2z& \\
+  \end{array}
+  \right.
+  \rightarrow$
+  $\left\{
+  \begin{array}{111}
+    & z(zx-zy)=0 \rightarrow z^2(x-y)=0 \rightarrow \cancel{z=0} \text{ edo } x=y & \\
+    & xy^2 + xyz -xyz +y^2z=0 \rightarrow y^2(x+z)=0 \rightarrow \cancel{y=0} \text{ edo } x=-z & \\
+  \end{array}
+  \right.
+  \rightarrow$
+  $\left.
+  \begin{array}{111}
+    & x=y=-z& \\
+    & V=xyz& \\
+  \end{array}
+  \right\}
+  \rightarrow
+  P(\sqrt[3]{V}, \sqrt[3]{V}, \sqrt[3]{V})$
+\end{center}
+
+
 
 
 \chapter{Integral mugagabea}
@@ -137,13 +210,19 @@ Beraz, ona hemen emaitza:
 \begin{equation*}
     \int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx;
 \end{equation*}
-Kalkulua (TODO: Azaldu)
-Integrala berehalakoa ez denez integrazio metodo bat erabili behar dugu, kasu honetan aldagai-aldaketa erabiliko dugu. $t=\sqrt{x}$ eta $dt=dx$ ordezkapenak egingu ditugu.
+(TODO: Azaldu)
+Integrala berehalakoa ez denez integrazio metodo bat erabili behar dugu, kasu honetan aldagai-aldaketa erabiliko dugu. $t=\sqrt[6]{x}$ eta $dt=dx$ ordezkapenak egingu ditugu.
 \begin{equation*}
     \begin{split}
     &\int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx = \int \frac{t^3-t}{t^2+1}6t^5dt = 6 * \int \frac{t^8-t^6}{t^2+1}dt =
      6 * \int \frac{(t^2+1)(t^6-2t^9+2t^2-2)+2}{(t^2+1)}dt = & 
-     \\ &6 * \int t^6-2t^4+2t^2-2+\frac{2}{t^2+1}dt = 6 * [\frac{t^7}{7}-\frac{2t^5}-{5}+\frac{2t^3}{3}-2t+2\int \frac{1}{t^2+1}dt] = &
+     \\ &6 * \int t^6-2t^4+2t^2-2+\frac{2}{t^2+1}dt = &
+     \end{split}
+\end{equation*}
+Integrala sinplifikatu ondoren berehalakoa bihurtzen da.
+\begin{equation*}
+     \begin{split}
+     &6 * [\frac{t^7}{7}-\frac{2t^5}-{5}+\frac{2t^3}{3}-2t+2\int \frac{1}{t^2+1}dt] = &
      \\ & \frac{6}{7} * t^7 - \frac{12}{5}t^5+4t^3-12t+12\arctan{t} + k = &
      \\ &\frac{6}{7} \sqrt[6]{x^7}-\frac{12}{5}\sqrt[6]{x^5}+4+\sqrt{x}-12*\sqrt[6]{x}+12\arctan{(\sqrt[6]{x})}+k&
     \end{split}
