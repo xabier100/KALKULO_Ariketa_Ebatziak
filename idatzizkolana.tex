@@ -1,6 +1,6 @@
 \chapter{Aldagai anitzeko funtzioak}
 \section{Aldagai anitzeko funtzioen jarraitutasuna}
-\underline{10.2.ariketa} Aztertu funtzio honen jarraitasuna
+\underline{10.2.ariketa} Aztertu funtzio honen jarraitasuna jatorrian.
 $$f(x,y) = \left\{ \begin{array}{cl}
 		x\sin \dfrac{1}{y} +y \sin \dfrac{1}{x},  &  x \neq 0 \, \mbox{ eta } \, y \neq 0, \\
                  0,	                                &  x=0 \mbox{ edo } y=0.
@@ -17,7 +17,7 @@ Funtzio bat jatorrian jarraia izateko honako baldintza hau bete behar du:
 	   
 Baldintza hau betetzen den edo ez jakiteko funtzioaren limitea jatorrian kalkulatu behar dugu. Horretarako, honako pausu hauek jarraituko ditugu:
 \begin{enumerate}
-    \item Dimetsio bakarreko limitea
+    \item Dimentsio bakarreko limitea
     \begin{eqnarray*}
         &g(y)&=\lim_{x \to 0}f(x,y)=\lim_{x \to 0} x\sin \dfrac{1}{y} +y \sin \dfrac{1}{x}= \nexists\\
         &h(x)&=\lim_{y \to 0}f(x,y)=\lim_{y \to 0} x\sin \dfrac{1}{y} +y \sin \dfrac{1}{x}= \nexists
@@ -46,23 +46,23 @@ Baldintza hau betetzen den edo ez jakiteko funtzioaren limitea jatorrian kalkula
     &\lim_{x,y \to (0,0)}f(x,y)=0\\
     &\forall \epsilon >0 \quad \exists \delta(\epsilon)>0 \quad / \quad0<||(x,y)||<\delta \rightarrow ||f(x,y)||<\epsilon  \\
     \\
-    &\text{Hau da frogatu behar dugun baldintza}\\
+    &\text{Hau da frogatu behar dugun baldintza.}\\
     &\forall \epsilon >0 \quad \exists \delta(\epsilon)>0 \quad / \quad0<||(x,y)||<\delta \rightarrow \left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|<\epsilon  \\
-    &\text{ Hasteko ezkerreko atala hartu eta sinplifikatzen saiatuko gara}\\
+    &\text{ Hasteko azken desberdintzaren ezkerreko atala hartu eta sinplifikatzen saiatuko gara.}\\
     &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq\left| x\right|\cdot\left |\sin\frac{1}{y}\right |+\left|y\right|\cdot\left|\sin\frac{1}{x}\right|\leq \abs{x}+\abs{y}\\
     &\text{Aurreko desberdintzaren eskuineko atalean lortu duguna ikusita,}\\
-    &\text{aukerarik honena baturaren norma erabiltzea da} \;\; \| (x,y) \| =\abs{x}+\abs{y}\ \\
-    &\| (x,y)\| < \delta \quad \text{bada,} \quad | x | + | y | < \delta \quad \text{dugu}\\
-    &\text{eta hortik lortu dugun}\quad\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq \abs{x}+\abs{y}\quad \text{desberdintzaz baliatuz}\\
-    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|< \delta\quad \text{izango dugu}\\
+    &\text{aukerarik honena baturaren norma erabiltzea da:} \;\; \| (x,y) \| =\abs{x}+\abs{y}\ \\
+    &\| (x,y)\| < \delta \quad \text{bada,} \quad | x | + | y | < \delta \quad \text{dugu.}\\
+    &\text{Hortik lortu dugun}\quad\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|\leq \abs{x}+\abs{y}\quad \text{desberdintzaz baliatuz}\\
+    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right|< \delta\quad \text{izango dugu.}\\
     &\text{Ondorioz nahikoa da}\quad \delta < \epsilon \quad \text{izatea }\\
-    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right| < \epsilon \quad \text{ere beteko delako}\\
+    &\left|x\cdot \sin \frac{1}{y}+ y \sin \frac{1}{x}\right| < \epsilon \quad \text{ere beteko delako.}\\
     &\text{Hau guztiarekin limite bikoitza 0 dela frogatu dugu} \quad \boxed{\lim_{x,y \to (0,0)}f(x,y)=0}
     \end{align*}
 \end{enumerate}
 
 \begin{align*}
-    &\text{Alde batetik,}\lim_{x,y \to (0,0)}f(x,y)=0\quad \text{frogatu dugu, bestetik,}\quad f(0,0)=0 \quad \text{da.}.\\ &\text{Ondorioz} \quad \boxed{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0} \quad \text{beteko da eta funtzioa jarraia da jatorrian.}
+    &\text{Alde batetik,}\lim_{x,y \to (0,0)}f(x,y)=0\quad \text{frogatu dugu, bestetik,}\quad f(0,0)=0 \quad \text{da.}\\ &\text{Ondorioz} \quad \boxed{\lim_{x,y \to (0,0)}f(x,y)=f(0,0)=0} \quad \text{beteko da eta funtzioa jarraia da jatorrian.}
 \end{align*}
 
 
@@ -76,7 +76,7 @@ Baldintza hau betetzen den edo ez jakiteko funtzioaren limitea jatorrian kalkula
 
 \chapter{Aldagai anitzeko funtzioen diferentziagarritasuna}
 \section{Berretura-seriezko garapena}
-\underline{25.4.ariketa} Kalkulatu zazu funtzioaren Taylorren garapena ematen den puntuaren inguruan
+\underline{25.4.ariketa} Kalkulatu ezazu funtzioaren Taylorren garapena ematen den puntuaren inguruan.
 \begin{equation*}
     f(x,y)=cos(x)cos(y), \quad (0,\frac{\pi}{2}) \text{ puntuan eta 3.ordenaraino.}
 \end{equation*}
@@ -114,7 +114,7 @@ Lehenengo eta behin, formulan ordezkatu behar ditugun gai guztiak kalkulatuko di
     &D_{222}f(x,y)=\cos{x}\sin{y}&D_{222}f(0,\frac{\pi}{2})=\cos{0}\sin{\frac{\pi}{2}}=1\\
     \end{array}
 \end{equation*}
-Ondoren, 0 atera zaizkigun gai guztiak formulatik ken ditzakegu
+Ondoren, 0 atera zaizkigun gai guztiak formulatik ken ditzakegu.
 \begin{equation*}
 \begin{split}
     &f(x,y)=\cancel{f(a,b)}+\frac{1}{1!}(\cancel{D_1f(a,b)(x-a)}+D_2f(a,b)(y-b))+\\
@@ -137,6 +137,19 @@ Beraz, ona hemen emaitza:
     \boxed{f(x,y)=-\left(y-\frac{\pi}{2}\right)+\frac{1}{2}x^2\left(y-\frac{\pi}{2}\right)+\frac{1}{6}\left(y-\frac{\pi}{2}\right)^3}
 \end{equation*}
 
+Wolfram Mathematica programa erabiliz irudikatzen baldin badugu:
+\begin{itemize}
+    \item Gorriz taylorren garapena 3.ordeneraino
+    \item Urdinez funtzioa
+    \item Berdez puntua 
+\end{itemize}
+
+\begin{figure*}[h]
+    \includegraphics[scale=0.5]{2.ariketa Taylor-1.png}
+    \includegraphics[scale=0.5]{2.ariketa Taylor-2.png}
+    \label{fig:my_label}
+\end{figure*}
+
 \chapter{Aldagai anitzeko funtzioen analisi lokala}
 \section{Aldagai anitzeko funtzioen mutur baldintzatuak}
 \underline{19.ariketa} Zer luze dira azalera txikiena duen V bolumeneko paralelepipedoaren ertzak? Eta azalera handienekoarenak?
@@ -150,57 +163,129 @@ Beraz, ona hemen emaitza:
 \begin{equation*}
     F(x,y,z) = (2xy + 2xz + 2zy) + \lambda(xyz-V)
 \end{equation*}
-\newline
-\begin{center}
-$\left.
-  \begin{array}{111}
-    & D_{1f}(x,y,z)=2(y+z) + \lambda(yz)& \\
-    & D_{2f}(x,y,z)=2(x+z) + \lambda(xz)& \\
-    & D_{1f}(x,y,z)=2(x+y) + \lambda(yx)& \\
-    & V = xyz 
-  \end{array}
+
+\begin{equation*}
+\left.
+  \begin{tabular}{ c }
+    $D_{1f}(x,y,z)=2(y+z) + \lambda(yz)$ \\
+    $D_{2f}(x,y,z)=2(x+z) + \lambda(xz)$ \\
+    $D_{3f}(x,y,z)=2(x+y) + \lambda(yx)$ \\
+    $V = xyz$ 
+    \end{tabular}
   \right\}
   \rightarrow
   \left.
-  \begin{array}{111}
-    & 2(y+z) + \lambda(yz) = 0& \\
-    & 2(x+z) + \lambda(xz) = 0& \\
-    & 2(x+y) + \lambda(yx) = 0& \\
-    & V = xyz 
-  \end{array}
+  \begin{tabular}{ c }
+    $2(y+z) + \lambda(yz) = 0$ \\
+    $2(x+z) + \lambda(xz) = 0$ \\
+    $2(x+y) + \lambda(yx) = 0$ \\
+    $V = xyz$ 
+  \end{tabular}
   \right\}
   \rightarrow
     \left.
-  \begin{array}{111}
-    & \lambda = \frac{-2(y+z)}{yz}& \\
-    & \lambda = \frac{-2(x+z)}{xz}& \\
-    & \lambda = \frac{-2(x+y)}{yx}& \\
-  \end{array}
+  \begin{tabular}{ c }
+    $\lambda = \frac{-2(y+z)}{yz}$ \\
+    $\lambda = \frac{-2(x+z)}{xz}$ \\
+    $\lambda = \frac{-2(x+y)}{yx}$ \\
+  \end{tabular}
   \right\}
   \rightarrow
+\end{equation*}
+\begin{equation*}
+\rightarrow
   \left\{
-  \begin{array}{111}
-    & \frac{-2(y+z)}{yz} = \frac{-2(x+z)}{xz} \rightarrow (y+z)xz=(x+z)yz \rightarrow z(yx+zx-yx-zy)=0&\\
-    & \frac{-2(y+z)}{yz} = \frac{-2(x+y)}{xy} \rightarrow (y+z)xy=(x+y)yz \rightarrow xy^2 + xyz = xyz -y^2z& \\
-  \end{array}
+  \begin{tabular}{ c }
+     $\frac{-2(y+z)}{yz} = \frac{-2(x+z)}{xz} \rightarrow (y+z)xz=(x+z)yz \rightarrow z(yx+zx-yx-zy)=0$\\
+     $\frac{-2(y+z)}{yz} = \frac{-2(x+y)}{xy} \rightarrow (y+z)xy=(x+y)yz \rightarrow xy^2 + xyz = xyz -y^2z$
+  \end{tabular}
   \right.
-  \rightarrow$
-  $\left\{
-  \begin{array}{111}
-    & z(zx-zy)=0 \rightarrow z^2(x-y)=0 \rightarrow \cancel{z=0} \text{ edo } x=y & \\
-    & xy^2 + xyz -xyz +y^2z=0 \rightarrow y^2(x+z)=0 \rightarrow \cancel{y=0} \text{ edo } x=-z & \\
-  \end{array}
+  \rightarrow
+\end{equation*}
+\begin{equation*}
+\rightarrow
+  \left\{
+  \begin{tabular}{ c }
+    $z(zx-zy)=0 \rightarrow z^2(x-y)=0 \rightarrow \cancel{z=0} \text{ edo } x=y$ \\
+    $xy^2 + xyz -xyz +y^2z=0 \rightarrow y^2(x+z)=0 \rightarrow \cancel{y=0} \text{ edo } x=-z$ \\
+  \end{tabular}
   \right.
-  \rightarrow$
-  $\left.
-  \begin{array}{111}
-    & x=y=-z& \\
-    & V=xyz& \\
-  \end{array}
+  \rightarrow
+\end{equation*}
+\begin{equation*}
+ \rightarrow
+ \left.
+ \begin{tabular}{ c }
+    $x=y=-z$ \\
+    $V=xyz$ \\
+  \end{tabular}
   \right\}
   \rightarrow
-  P(\sqrt[3]{V}, \sqrt[3]{V}, \sqrt[3]{V})$
-\end{center}
+   \boxed{P(\sqrt[3]{V}, \sqrt[3]{V}, \sqrt[3]{V})}
+\end{equation*}
+\newpage
+\begin{equation*}
+    \boxed{g(x,y) = F\Bigg(x,y,\frac{V}{xy}\Bigg)} = 2xy + 2x\Bigg(\frac{V}{xy}\Bigg) + 2y\Bigg(\frac{V}{xy}\Bigg)= 2xy + \frac{2V}{y} + \frac{2V}{x}
+\end{equation*}
+Segida Hesetarra lortu
+\begin{itemize}
+    \item $\lambda_1$ lortu
+        \begin{equation*}
+        D_{1g}(x,y) = \frac{-2V}{x^2} + 2y
+        \rightarrow
+        D_{11g}(x,y) = \frac{4V}{x^3}
+        \rightarrow
+        \lambda_{1} = D_{11g}(\sqrt[3]{V}, \sqrt[3]{V}) = 4
+        \end{equation*}
+\item $\lambda_2$ lortu
+    \begin{equation*}
+        D_{1g}(x,y) = \frac{-2V}{x^2} + 2y
+        \rightarrow
+        \left\{
+        \begin{tabular}{c}
+        $D_{11g}(x,y) = \frac{4V}{x^3}$ \\
+        $D_{21g}(x,y) = 2$
+        \end{tabular}
+        \right.
+    \end{equation*}
+    \begin{equation*}
+        D_{2g}(x,y) = \frac{-2V}{y^2} + 2x
+        \rightarrow
+        \left\{
+        \begin{tabular}{c}
+        $D_{12g}(x,y) = 2$ \\
+        $D_{21g}(x,y) = \frac{4V}{x^3}$
+        \end{tabular}
+        \right.
+    \end{equation*}
+    \begin{equation*}
+        \lambda_{2} = 
+    \begin{vmatrix}
+        D_{11g} & D_{12g}\\
+        D_{21g} & D_{22g}
+    \end{vmatrix}
+    =
+    \begin{vmatrix}
+        \frac{4V}{x^3} & 2\\
+        2 & \frac{4V}{x^3}
+    \end{vmatrix}
+    \end{equation*}
+    \begin{equation*}
+        \lambda_{2}(\sqrt[3]{V},\sqrt[3]{V}) = 
+    \begin{vmatrix}
+        4 & 2\\
+        2 & 4
+    \end{vmatrix}
+    = 12
+    \end{equation*}
+\item Segida hesetarra
+    \begin{equation*}
+    \{1, \lambda_{1}, \lambda_{2}\} = \{1, 4, 12\}
+    \rightarrow
+    \boxed{\text{Minimoa }\Big(\sqrt[3]{V}, \sqrt[3]{V}, \sqrt[3]{V}, 6\cdot(\sqrt[3]{V})^2\Big)}
+    \end{equation*}
+\end{itemize}
+
 
 
 
@@ -211,20 +296,20 @@ $\left.
     \int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx;
 \end{equation*}
 (TODO: Azaldu)
-Integrala berehalakoa ez denez integrazio metodo bat erabili behar dugu, kasu honetan aldagai-aldaketa erabiliko dugu. $t=\sqrt[6]{x}$ eta $dt=dx$ ordezkapenak egingu ditugu.
+Integrala berehalakoa ez denez integrazio metodo bat erabili behar dugu, kasu honetan aldagai-aldaketa erabiliko dugu. $t=\sqrt[6]{x}$ eta $dt=dx$ ordezkapenak egingo ditugu.
 \begin{equation*}
     \begin{split}
-    &\int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx = \int \frac{t^3-t}{t^2+1}6t^5dt = 6 * \int \frac{t^8-t^6}{t^2+1}dt =
-     6 * \int \frac{(t^2+1)(t^6-2t^9+2t^2-2)+2}{(t^2+1)}dt = & 
-     \\ &6 * \int t^6-2t^4+2t^2-2+\frac{2}{t^2+1}dt = &
+    &\int \frac{\sqrt{x}-\sqrt[6]{x}}{\sqrt[3]{x}+1}\ dx = \int \frac{t^3-t}{t^2+1}6t^5dt = 6 \cdot \int \frac{t^8-t^6}{t^2+1}dt =
+     6 \cdot \int \frac{(t^2+1)(t^6-2t^9+2t^2-2)+2}{(t^2+1)}dt = & 
+     \cr &6 \cdot \int t^6-2t^4+2t^2-2+\frac{2}{t^2+1}dt = &
      \end{split}
 \end{equation*}
 Integrala sinplifikatu ondoren berehalakoa bihurtzen da.
 \begin{equation*}
      \begin{split}
-     &6 * [\frac{t^7}{7}-\frac{2t^5}-{5}+\frac{2t^3}{3}-2t+2\int \frac{1}{t^2+1}dt] = &
-     \\ & \frac{6}{7} * t^7 - \frac{12}{5}t^5+4t^3-12t+12\arctan{t} + k = &
-     \\ &\frac{6}{7} \sqrt[6]{x^7}-\frac{12}{5}\sqrt[6]{x^5}+4+\sqrt{x}-12*\sqrt[6]{x}+12\arctan{(\sqrt[6]{x})}+k&
+         &6 \cdot                  [\frac{t^7}{7}-\frac{2t^5}-{5}+\frac{2t^3}{3}-2t+2\int \frac{1}{t^2+1}dt] = &
+         \cr & \frac{6}{7} \cdot t^7 - \frac{12}{5}t^5+4t^3-12t+12\arctan{t} + k = &
+         \cr &\frac{6}{7} \sqrt[6]{x^7}-\frac{12}{5}\sqrt[6]{x^5}+4+\sqrt{x}-12\cdot\sqrt[6]{x}+12\arctan{(\sqrt[6]{x})}+k&
     \end{split}
 \end{equation*}
 
@@ -237,4 +322,30 @@ Integrala sinplifikatu ondoren berehalakoa bihurtzen da.
 
 \begin{equation*}
     x^2+(y-b)^2=a^2,\ \text{torua}\ b>a \ \text{izanik;}
-\end{equation*}
+    \end{equation*}
+    \newline
+    Ikusten dugunez, gorputz honek eragiten duen bolumena (kalkulatu behar dugun bolumena) hau izango litzateke:
+
+    
+   \begin{figure*}[h]
+    
+ \includegraphics[scale=1]{4.png}
+ \includegraphics[scale=1.2]{4b.png}
+    \end{figure*}
+    \newpage
+    
+    
+Horretarako formula hau erabiliko dugu bolumena kalkulatzeko:\\
+
+$$V=\int_{-a}^{a} f^2(x)-g^2(x) dx$$
+$$V= \pi \int_{-a}^{a} (b+\sqrt{a^2-x^2})^2-(b-\sqrt{a^2-x^2})^2 dx$$
+
+
+    
+    
+    
+    
+    
+    
+    
+    
